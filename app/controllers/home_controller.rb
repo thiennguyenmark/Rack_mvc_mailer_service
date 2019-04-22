@@ -7,4 +7,8 @@ class HomeController < Frack::BaseController
   def contact
     render
   end
+
+  def send_mail_to_system
+    render
+  end
 end
