@@ -1,7 +1,6 @@
 $LOAD_PATH.unshift '.'
 
 require 'lib/frack'
-require 'app/controllers/users_controller'
 require 'app/controllers/home_controller'
 require 'app/models/user'
 

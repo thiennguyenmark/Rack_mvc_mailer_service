@@ -1,4 +1,4 @@
 require 'spec_helper'
 
-describe 'users#index' do
+describe 'home#contact' do
 end
