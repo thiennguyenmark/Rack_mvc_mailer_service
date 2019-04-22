@@ -1,8 +1,8 @@
 $LOAD_PATH.unshift '.'
 
-require 'lib/frack'
+require 'lib/base'
 require 'app/controllers/home_controller'
-require 'app/models/user'
+require 'app/models/contact'
 
 # use Rack::CommonLogger
 use Rack::Static, root: 'app/assets', urls: ['/images', '/js', '/css']
