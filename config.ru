@@ -9,8 +9,9 @@ use Rack::Static, root: 'app/assets', urls: ['/images', '/js', '/css']
 use Rack::ContentLength
 use Rack::Reloader, 0
 use Base::Router do
+  match '/index' => 'home#index'
   match '/' => 'home#contact'
-  match '/done' => 'home#send_mail_to_system'
+  match '/send_mail_to_system' => 'home#send_mail_to_system'
 end
 
 run Base::Application

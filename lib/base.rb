@@ -5,7 +5,7 @@ require 'erb'
 require 'tilt'
 
 module Base
-  autoload :Router, 'base_controller/router'
-  autoload :Application, 'base_controller/application'
-  autoload :BaseController, 'base_controller/base_controller'
+  autoload :Router, 'base/router'
+  autoload :Application, 'base/application'
+  autoload :BaseController, 'base/base_controller'
 end

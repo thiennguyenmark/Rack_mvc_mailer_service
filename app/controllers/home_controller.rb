@@ -1,6 +1,7 @@
+require './config/setup'
+
 class HomeController < Base::BaseController
   def index
-    @users = User.all
     render
   end
 
@@ -9,6 +10,30 @@ class HomeController < Base::BaseController
   end
 
   def send_mail_to_system
-    render
+    contact_params
+    @contact = Contact.new(contact_params)
+    if @contact.valid?
+      @contact.save!
+      render
+    else
+      @errors = @contact.errors
+      byebug
+      render 'home/contact'
+    end
+  end
+
+  def fails
+  end
+
+  private
+
+  def contact_params
+    return{
+      firstname: params['firstname'],
+      lastname: params['lastname'],
+      email: params['email'],
+      phone_number: params['phone_number'],
+      message: params['message']
+    }
   end
 end
