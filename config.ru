@@ -8,9 +8,9 @@ require 'app/models/contact'
 use Rack::Static, root: 'app/assets', urls: ['/images', '/js', '/css']
 use Rack::ContentLength
 use Rack::Reloader, 0
-use Frack::Router do
+use Base::Router do
   match '/' => 'home#contact'
   match '/done' => 'home#send_mail_to_system'
 end
 
-run Frack::Application
+run Base::Application

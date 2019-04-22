@@ -1,4 +1,4 @@
-class HomeController < Frack::BaseController
+class HomeController < Base::BaseController
   def index
     @users = User.all
     render

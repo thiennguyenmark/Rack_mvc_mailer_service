@@ -1,4 +1,4 @@
-module Frack
+module Base
   class Router
     attr_reader :app, :routes
 

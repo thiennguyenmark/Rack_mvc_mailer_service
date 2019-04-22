@@ -1,4 +1,4 @@
-module Frack
+module Base
   class BaseController
     attr_reader :env
 

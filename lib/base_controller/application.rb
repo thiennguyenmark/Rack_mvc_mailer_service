@@ -1,4 +1,4 @@
-module Frack
+module Base
   class Application
     class << self
       attr_accessor :env
