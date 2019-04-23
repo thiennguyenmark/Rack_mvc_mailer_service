@@ -18,7 +18,6 @@ class HomeController < Base::BaseController
       render
     else
       @errors = @contact.errors
-      byebug
       render 'home/contact'
     end
   end
