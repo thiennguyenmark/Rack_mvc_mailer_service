@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require './app/workers/contact_worker'
 require 'redis'
+require 'yaml'
 
 require './app/models/contact'
 

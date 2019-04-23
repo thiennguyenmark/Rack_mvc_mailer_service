@@ -1,0 +1,4 @@
+development:
+  MAILER_HOST: 'localhost'
+  MAILER_EMAIL: 'thiennguyen.mark@gmail.com'
+  MAILER_PASSWORD: 'notcheckingrightnow'

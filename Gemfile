@@ -11,6 +11,7 @@ gem 'standalone_migrations'
 gem 'thin'
 gem 'tilt'
 gem 'sidekiq'
+gem 'actionmailer'
 
 group :development, :test do
   gem 'pry'
