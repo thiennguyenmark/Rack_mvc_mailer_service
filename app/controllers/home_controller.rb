@@ -14,6 +14,7 @@ class HomeController < Base::BaseController
     @contact = Contact.new(contact_params)
     if @contact.valid?
       @contact.save!
+      ContactWorker.perform_async('Thien Nguyen not used')
       render
     else
       @errors = @contact.errors

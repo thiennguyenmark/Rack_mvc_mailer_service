@@ -5,14 +5,16 @@
             <a href="http://bootstrapious.com">Bootstrapious.com</a>
         </h1>
         <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>
-        <% if @errors.any? %>
-            <div id="error_explanation">
-              <h2 style="color:red"><%= @errors.count.to_s + "error" + (@errors.count > 1 ? 's' : '') %> which made your contact invalid !</h2>
-              <ul>
-              <% @errors.full_messages.each do |message| %>
-                <li><%= message %></li>
-              <% end %>
-            </div>
+        <% unless @errors.nil? %>
+          <% if @errors.any? %>
+              <div id="error_explanation">
+                <h2 style="color:red"><%= @errors.count.to_s + "error" + (@errors.count > 1 ? 's' : '') %> which made your contact invalid !</h2>
+                <ul>
+                <% @errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </div>
+          <% end %>
         <% end %>
         <form id="contact-form" method="get" action="send_mail_to_system" role="form">
             <div class="messages"></div>
