@@ -1,4 +1,4 @@
 development:
-  MAILER_HOST: 'localhost'
-  MAILER_EMAIL: 'thiennguyen.mark@gmail.com'
-  MAILER_PASSWORD: 'notcheckingrightnow'
+  MAILER_HOST: 'localhost:9292'
+  MAILER_EMAIL: 'jaigajomin@gmail.com'
+  MAILER_PASSWORD: 'jjskt123$$'
